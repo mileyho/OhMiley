@@ -45,6 +45,7 @@ section h3.section-subheading {
     text-transform: none;
     font-family: 'Noto Sans TC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
+    color:#7faba2;
 }
 
 @media (min-width: 768px) {
@@ -124,7 +125,6 @@ img::-moz-selection {
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
     color: #7faba2;
-    text-shadow:
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -301,9 +301,8 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item .portfolio-caption {
     max-width: 400px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 10px;
     text-align: center;
-    background-color: #fff;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -313,9 +312,9 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     font-size: 16px;
-    font-style: italic;
     margin: 0;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans TC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #7faba2;
 }
 
 #portfolio * {
