@@ -20,10 +20,22 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="myicon.png">
-    <script>
-        if ( location.href.indexOf( "refresh=1" ) == -1 ) { 
-            location.href = location.href + "?refresh=1"; 
-        } 
+    <script type='text/javascript'>
+
+        (function()
+        {
+          if( window.localStorage )
+          {
+            if( !localStorage.getItem('firstLoad') )
+            {
+              localStorage['firstLoad'] = true;
+              window.location.reload();
+            }  
+            else
+              localStorage.removeItem('firstLoad');
+          }
+        })();
+
     </script>
 </head>
 
