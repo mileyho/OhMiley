@@ -977,23 +977,17 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
     <script>
-    $('.filters ul li').click(function() {
-        $('.filters ul li').removeClass('active');
-        $(this).addClass('active');
-
-        var data = $(this).attr('data-filter');
-        $grid.isotope({
-            filter: data
-        })
-    });
-
-    var $grid = $(".grid").isotope({
-        itemSelector: ".all",
-        percentPosition: true,
-        masonry: {
-            columnWidth: ".all"
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "js/filter.js";
+            document.body.appendChild(element);
         }
-    })
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else
+        window.onload = downloadJSAtOnload;
     </script>
 </body>
 
