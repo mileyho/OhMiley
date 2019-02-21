@@ -21,7 +21,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="myicon.png">
     <script>
-        window.onload = function () {window.location.reload()};
+        if ( location.href.indexOf( "refresh=1" ) == -1 ) { 
+            location.href = location.href + "?refresh=1"; 
+        } 
     </script>
 </head>
 
