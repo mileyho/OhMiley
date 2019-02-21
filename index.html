@@ -20,21 +20,18 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="myicon.png">
-    <script type='text/javascript'>
-     (function(){
-          if( window.localStorage )
-          {
-            if( !localStorage.getItem('firstLoad') )
-            {
-              localStorage['firstLoad'] = true;
-              window.location.reload();
-            }  
-            else
-              localStorage.removeItem('firstLoad');
-          }
-        })();
-
-    </script>
+    <!-- <style>
+        /* The styles for the site header, plus: */
+        .main-article,
+        .comments,
+        .about-me,
+        footer {
+          display: none;
+        }
+    </style>
+      <script>
+        loadCSS("/the-rest-of-the-styles.css");
+      </script> -->
 </head>
 
 <body id="page-top">
@@ -979,7 +976,7 @@
     <script src="js/agency.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
-    <script>
+    <!-- <script>
     $('.filters ul li').click(function() {
         $('.filters ul li').removeClass('active');
         $(this).addClass('active');
@@ -997,7 +994,7 @@
             columnWidth: ".all"
         }
     })
-    </script>
+    </script> -->
 </body>
 
 </html>
