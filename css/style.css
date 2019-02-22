@@ -101,7 +101,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-    background-color: #212529;
+    background-color: #f8f9fa;
 }
 
 #mainNav .navbar-toggler {
@@ -372,6 +372,10 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .modal-body img{
     margin-bottom: 50px;
+}
+
+.portfolio-modal .modal-body h3{
+    margin-bottom: 2rem;
 }
 
 .portfolio-modal .close-modal {
